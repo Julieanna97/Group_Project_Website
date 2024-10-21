@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/pages/about.css">
+    <link rel="stylesheet" href="../styles/contact.css"> <!-- New stylesheet for contact form -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- title -->
+    <title>Webwizz Digital CO</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <!-- Logo -->
+        <div class="logo-container">
+            <a href="../index.html">
+                <img src="../assets/logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
+
+        <!-- Hamburger menu (Checkbox hack to toggle the menu without JS) -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Desktop menu -->
+        <ul>
+            <li><a href="../index.html">Services</a></li>
+            <li><a href="../pages/clients.html">Clients</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main class="wrapper">
+        
+        <section class="container">
+            
+            <div class="content">
+                <h1>Get in Touch with Us</h1>
+                <h2>We're Here to Help You Succeed</h2>
+                <p>At WebWizz Digital CO, we believe in creating digital experiences that
+                    connect and inspire. Whether you have a question about our services, need assistance with your website,
+                    or just want to learn more about what we can do for you, our team is here
+                    to help.
+                </p>
+            </div>
+        
+            <div class="img-container">
+                <img src="../assets/images/1.jpg" alt="image" class="image">
+            </div>
+
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Address:</strong> 123 Digital Street, Tech City, TX 78945</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> contact@webwizzdigital.com</p>
+                <p><strong>Business Hours:</strong></p>
+                <p>Mon - Fri: 9 AM - 6 PM</p>
+                <p>Sat: 10 AM - 4 PM</p>
+                <p>Sun: Closed</p>
+            </div>
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <form action="#" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone" required>
+
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="row-center">
+                <img src="../assets/logo.png" alt="Logo" id="footer-companyLogo">
+                <h1 id="footer-company-name">WebWizz</h1>
+            </div>
+        </div>
+        <h5>Innovating Your Online Presence</h5>
+        <p>Fictive website by Kim Olsson & Julie Anne Cantillep</p>
+        <p>Fullstack development - Medieinstitutet - Sweden 2024</p>
+    </footer>
+</body>
+</html>

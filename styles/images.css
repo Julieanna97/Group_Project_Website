@@ -1,0 +1,83 @@
+/* Image Styles */
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Image Container */
+.img-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Circle Image Styles */
+.circle, .circle_small {
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ccc;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    aspect-ratio: 1;
+}
+
+/* Circle Sizes */
+.circle {
+    width: 300px;
+    height: 300px;
+}
+
+.circle_small {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2rem;
+}
+
+/* Circle Image */
+.circle img, .circle_small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Media Queries for Responsiveness */
+
+/* 
+Breakpoint Overview:
+- Mobile: < 768px
+- Tablet: 768px - 1200px
+- Smaller Desktops: 960px - 1200px
+- Larger Desktops: > 1200px
+*/
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+
+    .circle {
+        width: 300px;
+        height: 300px;
+        margin: 5rem 0 -2rem;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1200px) {
+   
+    .circle {
+        display: none;
+    }
+
+}
+
+/* Small Desktop Styles */
+@media (min-width: 768px) {
+   
+    .img-container {
+        flex-shrink: 1;
+        width: 50%;
+        margin-top: 0;
+    }
+}

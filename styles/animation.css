@@ -1,0 +1,131 @@
+/* Animations - primarily for client logos on the client page */
+
+/* Keyframes for floating effect with stronger shadow */
+@keyframes float1 {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Normal shadow */
+    }
+    50% {
+        transform: translateY(-5px); /* Move up */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+    }
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Normal shadow */
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Normal shadow */
+    }
+    50% {
+        transform: translateY(-8px); /* Move up */
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6); /* Stronger shadow */
+    }
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Normal shadow */
+    }
+}
+
+@keyframes float3 {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Normal shadow */
+    }
+    50% {
+        transform: translateY(-6px); /* Move up */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+    }
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Normal shadow */
+    }
+}
+
+
+/* Reusable float classes with different durations */
+.float1 {
+    animation: float1 2.5s ease-in-out infinite; /* 2.5s duration */
+}
+
+.float2 {
+    animation: float2 3.5s ease-in-out infinite; /* 3.5s duration */
+}
+
+.float3 {
+    animation: float3 4s ease-in-out infinite; /* 4s duration */
+}
+
+
+/* Add random delay for better appearance */
+.float1:nth-child(odd) {
+    animation-delay: 0.2s; /* Delay for odd items */
+}
+
+.float2:nth-child(even) {
+    animation-delay: 0.5s; /* Delay for even items */
+}
+
+.float3:nth-child(odd) {
+    animation-delay: 0.8s; /* Delay for odd items */
+}
+
+
+
+/* Animation for the logo on the hero */
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1); /* Normal size, no movement */
+    }
+    50% {
+        transform: translateY(-10px) scale(1.03); /* Move up and scale slightly larger */
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Return to original position and size */
+    }
+}
+
+@keyframes float-logo {
+    0% {
+        transform: translateY(0) scale(1); /* Normal size */
+    }
+    50% {
+        transform: translateY(-10px) scale(1.05); /* Slightly less movement and scaling for the logo */
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Return to normal size */
+    }
+}
+
+
+
+/* Animation for the logo on the hero */
+
+@keyframes slight-float {
+    0% {
+        transform: translateY(0) scale(1); /* Normal size, no movement */
+    }
+    50% {
+        transform: translateY(-1px) scale(1.01); /* Move up and scale slightly larger */
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Return to original position and size */
+    }
+}
+
+@keyframes slight-float-logo {
+    0% {
+        transform: translateY(0) scale(1); /* Normal size */
+    }
+    50% {
+        transform: translateY(-1px) scale(1.01); /* Slightly less movement and scaling for the logo */
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Return to normal size */
+    }
+}

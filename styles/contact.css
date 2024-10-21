@@ -1,0 +1,110 @@
+
+
+.contact-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Ensure wrapping on small screens */
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-right: 20px;
+    max-width: 300px;
+    flex: 1 1 300px; /* Adjust flex-grow, flex-shrink, and flex-basis */
+}
+
+.contact-info h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.contact-container {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    flex: 2 1 600px; /* Adjust flex-grow, flex-shrink, and flex-basis */
+}
+
+.contact-container h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 15px 20px;
+    background-color: #f03952;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .contact-form-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-container {
+        max-width: 100%;
+    }
+}
